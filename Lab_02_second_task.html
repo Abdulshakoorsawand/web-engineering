@@ -1,0 +1,97 @@
+<!-- Design the form shown: 
+     Embed google maps into your page.-->
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Form</title>
+    
+    </head>
+    
+    <body>
+            <form action="www.fillingup.php">
+                    
+            <fieldset>
+            
+                <h1>Payment Form</h1>
+
+                <p>Required fields are followed by <sup>*</sup></p>
+
+                <h2>Contact Information</h2>
+
+                <fieldset>
+
+                    <legend>Title</legend>
+
+                    <input type="radio" name="gender" value="Mister">Mister<br>
+
+                    <input type="radio" name="gender" value="Miss">Miss
+
+                </fieldset><br>
+
+                <label>Name:&#42;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                
+                    <input type="text" name="name" maxlength="30" required><br>
+                
+                </label><br>
+
+                <label>Password:&#42;
+                
+                    <input type="password" pattern=".{8,}" name="password" maxlength="30" required><br>
+                
+                </label><br>
+
+                <label>Email:&#42;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    <input type="email" name="email" required><br>
+                
+                </label><br>    
+
+                <h2>Payment Method</h2>
+
+                <label>Card type:<sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    <select name="cards">
+                    
+                    <option value="visa">Visa</option>
+                    
+                    <option value="debit_card">Debit Card</option>
+                    
+                    <option value="Paypal">Paypal</option>
+                
+                    </select>
+                
+                </label><br>
+
+                <label>Card number:<sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    <input type="number" maxlength="15" pattern=".{,15}" required>
+                    
+                </label><br>
+
+                <lable>Expiration Date:<sup>*</sup>&nbsp;&nbsp;
+                
+                    <input type="date" name="date" placeholder="MM/DD/YYYY" required>
+                
+                </lable><br><br>
+                
+                <center>
+                
+                    <input type="submit" name="Validate the payment" value="Validate the payment">
+        
+                </center>
+                
+            </fieldset>
+                
+        </form> <br><br>
+        
+        <hr> 
+        <center><h1>MAP</h1></center>
+        <br>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.8930311117383!2d68.25835531516994!3d25.408390983798352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c795e86cdf11b%3A0xef1bd0f6ec31ced3!2sMehran%20University%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2s!4v1572619938202!5m2!1sen!2s" width="1500" height="600" frameborder="30px" style="border:0;" allowfullscreen=""></iframe>
+        
+    </body>
+
+</html>
